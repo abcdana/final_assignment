@@ -333,3 +333,47 @@ footer .container {
   margin: 80px ;
   margin-top: 38px;
 }
+
+
+
+
+/*    ASSIGNMENTS      */
+.homeworks {
+  text-align: center;
+}
+
+.first-container .comment {
+  text-align: right;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.homeworks .item {
+  display: inline-block;
+  margin: 20px;
+  box-shadow: 2px 2px 10px #999;
+}
+
+.homeworks .item:hover {
+  display: inline-block;
+  margin: 20px;
+  box-shadow: 2px 2px 20px #333;
+  background-color: #caddf1bb;
+}
+
+.homeworks .week {
+  background-color: #38424d;
+  color: #EEE;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.homeworks .item .contents img {
+  width: 80px;
+  height: 100px;
+}
+
+.homeworks .item .exp {
+  padding: 5px 10px;
+}
