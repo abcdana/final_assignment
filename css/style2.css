@@ -190,7 +190,11 @@ a:hover {
 }
 
 
-
+table, th, td {
+  /* border: 1px solid black; */
+  border-collapse: collapse;
+  table-layout: fixed;
+}
 
 
 /* --------------------------------------- */
@@ -281,4 +285,51 @@ footer .container {
     font-size: 20px;
     text-align: center;
     padding-bottom: 10px;
+}
+
+
+
+
+/*      REVIEW PAGE    */
+.review-tbl {
+  border-spacing: 35px 0px;
+  border-collapse: separate;
+}
+
+.review-tbl .tbl-title {
+  font-size: 25px;
+  padding: 20px;
+}
+
+.review-tbl .week {
+  background-color: #38424d;
+  color: #EEE;
+  text-align: center;
+  width: 33%;
+  border-radius: 10px 10px 0px 0px;
+  height: 50px;
+  font-size: 15px;
+}
+
+.review-tbl .tbl-text {
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+.review-tbl .tbl-text p {
+  border: 1px solid #38424d63;
+  border-radius: 0px 0px 10px 10px;
+  margin-top: -10px;
+  padding: 10px 20px 15px 20px;
+  box-shadow: 0px 2px 8px #888;
+  height: 240px;
+}
+
+.review-tbl .first-row p {
+  height: 160px;
+}
+
+.review-tbl {
+  margin: 80px ;
+  margin-top: 38px;
 }
