@@ -39,6 +39,8 @@ section .container .container-title {
     font-size: 16px;
     padding: 5px;
     border-radius: 2px;
+    font-size: 18px;
+  padding: 13px 0px 13px 20px;
 }
 
 nav {
@@ -338,40 +340,49 @@ footer .container {
 
 
 /*    ASSIGNMENTS      */
+
+
+/* section .first-container .hw-title {
+  
+  font-size: 18px;
+  padding: 13px 0px 13px 20px;
+} */
+
 .homeworks {
   text-align: center;
 }
 
 .first-container .comment {
   text-align: right;
-  padding: 10px;
+  padding: 20px;
   font-size: 12px;
 }
 
 .homeworks .item {
   display: inline-block;
-  margin: 20px;
+  margin: 16px;
   box-shadow: 2px 2px 10px #999;
 }
 
 .homeworks .item:hover {
   display: inline-block;
-  margin: 20px;
+  margin: 16px;
   box-shadow: 2px 2px 20px #333;
   background-color: #caddf1bb;
+  cursor: pointer;
 }
 
 .homeworks .week {
   background-color: #38424d;
   color: #EEE;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
 }
 
 
 .homeworks .item .contents img {
-  width: 80px;
-  height: 100px;
+  width: 180px;
+  height: 110px;
 }
 
 .homeworks .item .exp {
