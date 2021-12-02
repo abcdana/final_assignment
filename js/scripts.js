@@ -1,3 +1,7 @@
+window.onload = function() {
+    document.getElementById('welcome-msg').style.visibility = 'hidden';
+}
+
 
 const id = document.getElementById('id'); // id를 입력할 수 있는 input 
 const password = document.getElementById('password'); //  password를 입력할 수 있는 input
@@ -22,12 +26,10 @@ password.addEventListener('keyup', function(){
 
 function printId()  {
     const idVal = document.getElementById('id').value;
-    document.getElementById("visitorId").innerText = idVal;
-  }
+    visitorId.innerHTML = idVal;
+}
 
-// loginBtn.addEventListener('click', function(){
-//     if(id.value !== "" && password.value !== "" && password.value.length > 5){
-//         alert(id.innerHTML);
-//         visitorId.innerText = id.innerHTML;
-//     }
-// });
+loginBtn.addEventListener('click', function(){
+    document.getElementById('login-box').style.display = 'none';
+    document.getElementById('welcome-msg').style.visibility = 'visible';
+});
