@@ -15,23 +15,26 @@
     <main>
         <!-- Navigation-->
         <nav class="navbar">
-            <div class="page-title"><h5><b>[웹개발입문] J'S WEBSITE</b></h5></div>
+            <div class="page-title"><h5><b>웹개발입문 학습성과 플렉스</b></h5></div>
             <div class="nav-menu">
                 <ul class="nav-bar">
-                    <li class="nav-item"><a class="nav-link" href="index2.html">Home</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="about.html">About Class</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="assignments.html">Assignments</a></li>
-                    <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+                  <li class="nav-item"><a class="nav-link" href="index2.html">Home</a></li>
+                  <!-- <li class="nav-item"><a class="nav-link" href="about.html">About Class</a></li> -->
+                  <li class="nav-item"><a class="nav-link" href="assignments.html">assignments</a></li>
+                  <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
                 </ul>
             </div>
         </nav>
 
         <!-- Section-->
         <section class="section">
-            
+
             <div class="login-section">
-                    <input class="id" placeholder="ID">
-                    <input class="pw" placeholder="PW"> <input type="button" value="LOGIN" class="login-btn btn">
+                <div id="login-box">
+                <input id="id" class="id" placeholder="ID" onChange='printId()'/>
+                <input type="password" id="password" class="pw" placeholder="PW"> <input type="button" value="LOGIN" id="login-btn" class="login-btn btn" >
+                </div>
+                <div id="welcome-msg"><span id="visitor-id">OO</span>님 환영합니다 !  </div>
             </div>
 
             <div class="container first-container">
@@ -51,7 +54,7 @@
                                 <p>display 프로퍼티로 박스 유형을 더 다양하게 사용할수 있게 되었다. 박스요소들을 효과적으로 배치 할 수 있는 방법들을 배웠고 화면 크기에 따라서도 박스들을 조정할수 있는걸 배워 신기했다.</p>
                             </td>
                             <td class="tbl-text first-row">
-                                <p>자바스크립트 전까지 배웠던 내용들을 한번더 정리하고 익혀둬서 준비를 잘해야겠다는 생각이 들었다. 전환이나 변환 같은 기능들도 잘 사용하면 더 다양하게 꾸밀 수 있을거 같다.</p>    
+                                <p>자바스크립트 전까지 배웠던 내용들을 한번더 정리하고 익혀둬서 준비를 잘해야겠다는 생각이 들었다. 전환이나 변환 같은 기능들도 잘 사용하면 더 다양하게 꾸밀 수 있을거 같다.</p>
                             </td>
                         </tr>
                         <tr style="border-spacing: 10px;">
@@ -66,7 +69,7 @@
                             <td class="tbl-text">
                                 <p>갬블링 게임 웹 페이지를 작성해보았는데 이런것도 제작이 가능하구나 싶었다. 더 공부해서 다른 복잡하고 재미있는 웹페이지를 만들어 보고 싶다는 생각을 했다.</p>
                             </td>
-                            <td class="tbl-text"> 
+                            <td class="tbl-text">
                                 <p>css3 태그 배치 기능을 배우고 그것을 이용하며 이전 오픈챌린지 문제를 수정해보는 등 배치가 무엇이며 유형에 따라 어디에 활용할 수 있는지를 실습으로 익혀가는 과정에서 참 배운 것이 많다고 느꼈다. css의 기능들에 익숙해진 이후 보다 깔끔하고 보기 좋은 웹 디자인을 해보고 싶다고 생각했다.css 고급 활용을 통해 더 많은 css 요소를 배우고 이를 웹페이지를 꾸미는데 활용해 볼 수 있어서 좋았다. 적절한 배치와 색 조합을 활용해 페이지를 더욱 보기 좋게 꾸며보고 싶다.</p>
                             </td>
                         </tr>
@@ -91,7 +94,7 @@
     <!-- Footer-->
     <footer class="footer">
         <div class="container">
-            Copyright &copy; J's Website 2021
+            Copyright &copy; 정민관 Website 2021
         </div>
     </footer>
     <!-- Core theme JS-->

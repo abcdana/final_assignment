@@ -1,0 +1,33 @@
+header {
+    background : yellowgreen;
+}
+
+h1 {
+    text-align : center;
+}
+
+header > p {
+    text-align : center;
+}
+
+p {
+    font-family : 휴먼편지체, Serif;
+    font-size : 1em;
+    text-align : left;
+    text-indent : 2em;
+}
+
+div {
+    background-color : plum;
+    text-indent : 1em;
+}
+
+span {
+    color :blueviolet;
+    font-size : 20px;
+    font-weight : bold;
+}
+footer {
+    background-color: orange;
+    border-width : 10px;
+}

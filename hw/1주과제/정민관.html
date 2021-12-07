@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>웹 페이지의 구성 요소</title>
+<style>
+	body { background-color : linen; color : green;
+				margin-left : 40px; margin-right : 40px;}
+	h3 { text-align : center; color : darkred;}
+	hr { height : 5px; border : solid grey;
+				background-color : grey }
+	span { color: blue; font-size: 20px; }
+</style>
+<script>
+	function show() { // <img>에 이미지 달기
+		document.getElementById("fig").src = "토끼총총.png"
+	}
+	function hide() { // <img>에 이미지 제거
+		document.getElementById("fig").src= "";
+	}
+</script>
+</head>
+<body>
+<h3 onmouseover="show()" onmouseout="hide()">정민관</h3>
+<hr>
+<div><img id="fig" src=""></div>
+저는 17학번 정민관이라고 합니다. 군휴학+ 쉬고싶어서 휴학이 좀 길었습니다.
+2달전에 <span>롤토체스 스트리머</span>.를 시작해서 하고있습니다.
+다른 취미나 관심으로는 2년째 주식하고 있고 군에서 책을 많이 봤습니다. 전역하고는 잘 안보네요.
+</body>
+</html>

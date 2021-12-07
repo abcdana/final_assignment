@@ -33,3 +33,4 @@ loginBtn.addEventListener('click', function(){
     document.getElementById('login-box').style.display = 'none';
     document.getElementById('welcome-msg').style.visibility = 'visible';
 });
+

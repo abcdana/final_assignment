@@ -16,7 +16,6 @@ main {
 
 
 section .container {
-    /* border: 1px solid black; */
     height: 100px;
     margin-top: 10px;
 }
@@ -27,7 +26,6 @@ section .container p {
 }
 
 section .first-container {
-    /* border: 1px solid black; */
     height: 400px;
     margin-top: 35px;
 }
@@ -40,7 +38,7 @@ section .container .container-title {
     padding: 5px;
     border-radius: 2px;
     font-size: 18px;
-  padding: 13px 0px 13px 20px;
+    padding: 13px 0px 13px 20px;
 }
 
 nav {
@@ -53,21 +51,19 @@ nav {
 section {
     width: 95%;
     height: 770px;
-    border: 1px solid blue;
     display: inline-block;
 }
 
 aside {
     width: 4%;
     height: 770px;
-    /* border: 1px solid brown; */
     float: right;
 }
 
 footer {
     width: 100%;
     height: 50px;
-    border: 1px solid brown;
+    border: 1px solid rgb(68, 75, 112);
     background-color: rgb(68, 75, 112);
 }
 
@@ -353,6 +349,7 @@ footer .container {
 
 .homeworks {
   text-align: center;
+  height: 750px;
 }
 
 .first-container .comment {
@@ -363,6 +360,7 @@ footer .container {
 
 .homeworks .item {
   display: inline-block;
+  width: 260px;
   margin: 16px;
   box-shadow: 2px 2px 10px #999;
 }
@@ -390,4 +388,144 @@ footer .container {
 
 .homeworks .item .exp {
   padding: 5px 10px;
+  font-size: 10px;
+}
+
+
+
+/* clock  */
+
+.clock{
+  width:150px;
+  height:150px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/clock.png");
+  background-size: cover;
+  border: 4px solid #091921;
+  box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+              inset 0 -15px 15px rgba(255,255,255,0.05),
+              0 -5px 15px rgba(0,0,0,0.3),
+              inset 0 15px 15px rgba(0,0,0,0.3);
+  border-radius: 50%;
+}
+
+.clock:before {
+  content: '';
+  position: absolute;
+  width:15px;
+  height:15px;
+  background:rgb(37, 37, 63);
+  border-radius: 50%;
+  z-index : 10;
+}
+
+.clock .hour,
+.clock .min,
+.clock .sec{
+  position: absolute;
+}
+
+.clock .hour .hr{
+  width : 75px;
+  height : 75px;
+}
+
+.clock .min .mn{
+  width : 100px;
+  height : 100px;
+}
+
+.clock .sec .sc{
+  width : 130px;
+  height : 130px;
+}
+
+.hr, .mn, .sc{
+  display:flex;
+  justify-content: center;
+  /* position: absolute; */
+  border-radius: 50%;
+}
+
+.hr:before{
+  content: '';
+  position: absolute;
+  width:8px;
+  height:40px;
+  background:#091921;
+  z-index : 10;
+  border-radius: 6px 6px 0 0;
+}
+
+.mn:before{
+  content: '';
+  position: absolute;
+  width:4px;
+  height:60px;
+  background:#091921;
+  z-index : 10;
+  border-radius: 6px 6px 0 0;
+}
+
+.sc:before{
+  content: '';
+  position: absolute;
+  width:2px;
+  height:80px;
+  background:rgb(120, 120, 172);
+  z-index : 10;
+  border-radius: 6px 6px 0 0;
+}
+
+
+
+/* index2 메인화면 추가 수정 */
+
+#index-list {
+  float: left;
+  /* border:  1px solid black; */
+  background-color: rgb(237, 239, 248);
+  width: 155px;
+  height: 87%;
+  padding: 15px 0px 10px 0px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+#index-list ul li {
+  margin: 18px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+#index-list ul li:hover {
+  color: #7d9dbd;
+}
+
+
+#clock-area {
+  float: right;
+  margin-right: 25px;
+  margin-top: 25px;
+}
+
+
+#index-container {
+  height: 70%;
+}
+
+#list-content {
+  float: left;
+  left: 160px;
+  width: 68%; 
+  height: 88%; 
+  padding: 10px;
+}
+
+
+/* assignment 페이지 footer 위치조정 */
+#hw-footer {
+  margin-top: 100px;
 }

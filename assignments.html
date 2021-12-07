@@ -15,25 +15,27 @@
     <main>
         <!-- Navigation-->
         <nav class="navbar">
-            <div class="page-title"><h5><b>[웹개발입문] J'S WEBSITE</b></h5></div>
+            <div class="page-title"><h5><b>웹개발입문 학습성과 플렉스</b></h5></div>
             <div class="nav-menu">
                 <ul class="nav-bar">
-                    <li class="nav-item"><a class="nav-link" href="index2.html">Home</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="about.html">About Class</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="assignments.html">Assignments</a></li>
-                    <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+                  <li class="nav-item"><a class="nav-link" href="index2.html">Home</a></li>
+                  <!-- <li class="nav-item"><a class="nav-link" href="about.html">About Class</a></li> -->
+                  <li class="nav-item"><a class="nav-link" href="assignments.html">assignments</a></li>
+                  <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
                 </ul>
             </div>
         </nav>
 
         <!-- Section-->
         <section class="section">
-            
+
             <div class="login-section">
-                    <input class="id" placeholder="ID">
-                    <input class="pw" placeholder="PW"> <input type="button" value="LOGIN" class="login-btn btn">
-                
-            </div>
+                <div id="login-box">
+                <input id="id" class="id" placeholder="ID" onChange='printId()'/>
+                <input type="password" id="password" class="pw" placeholder="PW"> <input type="button" value="LOGIN" id="login-btn" class="login-btn btn" >
+                </div>
+                <div id="welcome-msg"><span id="visitor-id">OO</span>님 환영합니다 !  </div>
+        </div>
 
             <div class="container first-container">
 
@@ -43,59 +45,68 @@
                <div class="homeworks">
                    <div class="top">
                         <div class="item">
+                            <div class="week">1주차</div>
+                            <div class="contents"><a href="hw/1주과제.zip" download><img src="hw/1주.PNG">
+                            </a></div>
+                            <div class="exp">자기소개 페이지 만들기</div>
+                        </div>
+                        <div class="item">
+                            <div class="week">2주차</div>
+                            <div class="contents"><a href="hw/2주과제.zip" download><img src="hw/2주.PNG">
+                            </a></div>
+                            <div class="exp">HTML 태그로 만들기</div>
+                        </div>
+                        <div class="item">
+                            <div class="week">3주차</div>
+                            <div class="contents"><a href="hw/3주과제.zip" download><img src="hw/3주.PNG">
+                            </a></div>
+                            <div class="exp">구조화 및 웹 폼 삽입</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item">
                             <div class="week">4주차</div>
                             <div class="contents">
                                 <a href="hw/4주과제.zip" download><img src="hw/4주.PNG">
                             </a></div>
-                            <div class="exp">Lorem ipsum dolor sit amet consectetur.</div>
-                        </div> 
+                            <div class="exp">CSS3로 모양 꾸미기</div>
+                        </div>
                         <div class="item">
                             <div class="week">5주차</div>
                             <div class="contents"><a href="hw/5주과제.zip" download><img src="hw/5주.jpg">
                             </a></div>
-                            <div class="exp">Lorem ipsum dolor sit amet consectetur.</div>
-                        </div> 
+                            <div class="exp">CSS3로 태그 배치 하기</div>
+                        </div>
                         <div class="item">
                             <div class="week">6주차</div>
                             <div class="contents"><a href="hw/6주과제.zip" download><img src="hw/6주.PNG">
                             </a></div>
-                            <div class="exp">Lorem ipsum dolor sit amet consectetur.</div>
-                        </div> 
+                            <div class="exp">별문자 출력하기.</div>
+                        </div>
+                    </div>
+                    <div>
                         <div class="item">
                             <div class="week">7주차</div>
                             <div class="contents"><a href="hw/7주과제.zip" download><img src="hw/7주.PNG">
                             </a></div>
-                            <div class="exp">Lorem ipsum dolor sit amet consectetur.</div>
-                        </div> 
-                    </div>
-                    <div class="top">
+                            <div class="exp">배열을 리스트의 아이템으로 출력하기, 겜블링 게임</div>
+                        </div>
                         <div class="item">
                             <div class="week">8주차</div>
                             <div class="contents"><a href="hw/8주과제.zip" download><img src="hw/8주.PNG">
                             </a></div>
-                            <div class="exp">Lorem ipsum dolor sit amet consectetur.</div>
-                        </div> 
+                            <div class="exp">계산기 만들기.</div>
+                        </div>
                         <div class="item">
                             <div class="week">9주차</div>
                             <div class="contents"><a href="hw/9주과제.zip" download><img src="hw/9주.PNG">
                             </a></div>
-                            <div class="exp">Lorem ipsum dolor sit amet consectetur.</div>
-                        </div> 
-                        <div class="item">
-                            <div class="week">10주차</div>
-                            <div class="contents"><a href="hw/10주과제.zip" download><img src="hw/10주.jpg">
-                            </a></div>
-                            <div class="exp">Lorem ipsum dolor sit amet consectetur.</div>
-                        </div> 
-                        <!-- <div class="item">
-                            <div class="week">4주차</div>
-                            <div class="contents"><img src="img/daum.JPG"></div>
-                            <div class="exp">Lorem ipsum dolor sit amet consectetur.</div>
-                        </div>  -->
+                            <div class="exp">div 태그에 시계 만들기, 산수 문제 풀기.</div>
+                        </div>
                     </div>
                 </div>
-               
-               
+
+
 
 
             </div>
@@ -115,9 +126,9 @@
         </aside>
     </main>
     <!-- Footer-->
-    <footer class="footer">
+    <footer class="footer" id="hw-footer">
         <div class="container">
-            Copyright &copy; J's Website 2021
+            Copyright &copy; 정민관 Website 2021
         </div>
     </footer>
     <!-- Core theme JS-->

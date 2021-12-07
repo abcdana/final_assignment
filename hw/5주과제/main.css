@@ -1,0 +1,45 @@
+html, body {
+    height : 100%;
+}
+
+body {
+    background-color : aliceblue;
+    height : 100%;
+}
+
+h1 {
+    color : brown;
+    text-align : center;
+}
+
+header {
+    height : 15%;
+    background : yellowgreen;
+}
+
+section {
+    width : 70%;
+    height : 70%;
+    background : lightblue;
+    float : left;
+}
+
+nav {
+    width : 30%;
+    height : 70%;
+    background : orange;
+    float : left;
+}
+
+#sample img {
+    overflow : hidden;
+}
+p {
+    font-family : 바탕체,"Times New Roman", Serif;
+    font-size : 1em;
+}
+
+#foot {
+    clear : both;
+    background : plum;
+}
